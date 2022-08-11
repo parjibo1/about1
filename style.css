@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    a{
+    text-decoration: none;
+    }
+    ul{
+    list-style: none;
+    }
+    .active{
+    color: pink;
+    text-decoration: underline;
+    font-weight: bold;
+    }
+    body , html{
+    overflow-x: hidden;
+    }
+    
+    /* navbar */
+    
+    .navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    
+    }
+    .nav-links{
+    display: flex;
+    align-items: center;
+    }
+    .nav-links li{
+    margin: 0 30px;
+    }
+    
+    header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("image1/background.png");
+    background-position: bottom;
+    background-size: covers;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    }
+    .header-content{
+        margin-bottom: 150px;
+        color: whitesmoke;
+        text-align: center;
+    }
+    .header-content h2{
+        font-size: 4vmin;
+    }
+    .line{
+        width: 150px;
+        height: 4px;
+        background: #fc036b;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+    .header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    }
+    .ctn{
+        padding: 8px 15px;
+        background: #e56c47;
+        border-radius: 30px;
+        color: rgb(232, 24, 24);
+    }
+    .menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+    }
+    /* events */
+    
+    section{
+        width: 80%;
+        margin:  80px auto;
+    }
+    
+    .title{
+        text-align: center;
+        font-size: 4vmax;
+        color: blue;
+    }
+    
+    .row{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+    
+    .row .col img {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .events .row{
+        margin-top: 50px;
+    }
+    h4{
+        font-size: 3vmin;
+        color: #484872;
+        margin: 20px auto;
+    }
+    p{
+        color: #7c7c7c;
+        padding: 0px 40px;
+    
+    }
+    .events .ctn{
+        margin-top: 80px;
+    
+    }
+    .explore{
+        width: 100%;
+        height: 100vh;
+        background-image: url("image1/meflagg.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+    }
+    .explore-content{
+    width: 60%;
+    padding: 50px;
+    color: purple;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+    .explore-content h1{
+    font-size: 7vmin;
+    margin-bottom: 50px;
+    }
+    
+    .explore-content p{
+        color: blue;
+    }
+    .explore-content .ctn{
+        margin-top: 40px;
+    }
+    .explore-content1{
+        width: 60%;
+        padding: 50px;
+        color: yellow;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+        .explore-content h1{
+        font-size: 7vmin;
+        margin-bottom: 50px;
+        }
+    
+    
+    
+    .tours .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .image-gallery img{
+        width: 300px;
+    }
+    .footer{
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+        }
+        .footer h4{
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        .icons{
+            color: green;
+        }
+    .image-wrap{width: 100%}
+    .image-wrap img{width: 100%; padding: 10px;border-radius: 50%;box-shadow: 0 0 10px #999999;}
+    
+    
+    .text-center{
+        background-color: #484872;
+    }
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* mobilc devices */
+    @media only screen and (max-width:850px) {
+        .menu-btn{
+            display: block;
+        }
+        .navbar{
+            padding: 0;
+        }
+        .logo{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        .nav-links{
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            background: blue;
+            margin-top: -900px;
+            transition: all 0.5s ease;
+        }
+        .mobile-menu{
+            margin-top: 0px;
+            border-bottom-right-radius: 30px;
+    
+        }
+        .nav-links li{
+            margin: 30px auto;
+        
+        }
+    }
